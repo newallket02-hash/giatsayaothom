@@ -152,7 +152,7 @@ export default function App() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-black leading-tight tracking-tight">
-              GIẶT SẤY CHUYÊN NGHIỆP <br />
+              GIẶT SẤY TÂN BÌNH <br />
               <span className="text-yellow-300">CHỈ TỪ 10K/KG</span>
             </h1>
 

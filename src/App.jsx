@@ -148,7 +148,7 @@ export default function App() {
           <div className="md:col-span-7 space-y-5 text-center md:text-left">
             <div className="inline-flex items-center space-x-2 bg-yellow-400/20 border border-yellow-300/40 text-yellow-300 px-3.5 py-1.5 rounded-full text-sm font-bold tracking-wide">
               <Sparkles className="w-4 h-4" />
-              <span>Sạch Sâu - Thơm Lâu - Gấp Gọn Mặc Ngay</span>
+              <span>Sạch Sâu - Thơm Lâu - Gấp Gọn</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-black leading-tight tracking-tight">

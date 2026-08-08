@@ -279,7 +279,7 @@ export default function App() {
 
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div>
-                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-xl sm:text-xl font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt sấy
                     </div>
                     <div className="text-sm text-yellow-200 pl-4 font-semibold">(&lt; 3kg)</div>
@@ -292,7 +292,7 @@ export default function App() {
 
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div>
-                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-xl sm:text-xl font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt sấy
                     </div>
                     <div className="text-sm text-yellow-200 pl-4 font-semibold">(&gt; 3kg)</div>
@@ -305,7 +305,7 @@ export default function App() {
 
                 <div className="flex items-center justify-between py-2">
                   <div>
-                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-xl sm:text-xl font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt chăn màn
                     </div>
                   </div>
@@ -330,7 +330,7 @@ export default function App() {
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-lg sm:text-lg font-bold text-white">Giặt giày</div>
+                    <div className="text-xl sm:text-xl font-bold text-white">Giặt giày</div>
                   </div>
                   <div className="text-right">
                     <span className="text-3xl sm:text-3xl font-black text-yellow-300">70K</span>
@@ -341,7 +341,7 @@ export default function App() {
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-lg sm:text-lg font-bold text-white">Tẩy quần áo</div>
+                    <div className="text-xl sm:text-xl font-bold text-white">Tẩy quần áo</div>
                   </div>
                   <div className="text-right">
                     <span className="text-3xl sm:text-3xl font-black text-yellow-300">20K</span>
@@ -352,7 +352,7 @@ export default function App() {
                 <div className="flex items-center justify-between py-2">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-lg sm:text-lg font-bold text-white">Ủi đồ</div>
+                    <div className="text-xl sm:text-xl font-bold text-white">Ủi đồ</div>
                   </div>
                   <div className="text-right">
                     <span className="text-3xl sm:text-3xl font-black text-yellow-300">5K</span>

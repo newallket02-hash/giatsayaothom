@@ -88,7 +88,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800 flex flex-col pb-20 md:pb-0 selection:bg-yellow-300 selection:text-blue-900">
 
       {/* 1. THANH THÔNG BÁO ƯU ĐÃI TRÊN CÙNG */}
-      <div className="bg-yellow-400 text-blue-950 font-bold text-xs py-2 px-4 text-center flex items-center justify-center space-x-2 shadow-inner">
+      <div className="bg-yellow-400 text-blue-950 font-bold text-sm py-2 px-4 text-center flex items-center justify-center space-x-2 shadow-inner">
         <Truck className="w-4 h-4 animate-bounce" />
         <span>GIAO NHẬN TẬN NƠI - FREE SHIP BÁN KÍNH 2KM!</span>
         <span className="hidden sm:inline-block">| Hotline/Zalo: <strong>{PHONE_DISPLAY}</strong></span>
@@ -103,7 +103,7 @@ export default function App() {
               <Sparkles className="w-6 h-6 text-[#0038A8]" />
             </div>
             <div>
-              <div className="text-2xl font-black tracking-tight leading-none flex items-center text-white">
+              <div className="text-3xl font-black tracking-tight leading-none flex items-center text-white">
                 Áo <span className="text-yellow-300 ml-1">thơm</span>
               </div>
               <div className="text-[10px] text-blue-200 font-medium tracking-wider uppercase">Giặt sấy sạch thơm tận nơi</div>
@@ -111,7 +111,7 @@ export default function App() {
           </a>
 
           {/* Điều hướng nhanh */}
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-semibold">
+          <nav className="hidden md:flex items-center space-x-6 text-base font-semibold">
             <a href="#banggia" className="hover:text-yellow-300 transition">Bảng Giá</a>
             <a href="#tinhgia" className="hover:text-yellow-300 transition">Tính Tiền Giặt</a>
             <a href="#camket" className="hover:text-yellow-300 transition">Cam Kết</a>
@@ -121,7 +121,7 @@ export default function App() {
           <div className="flex items-center space-x-2">
             <a
               href={`tel:${PHONE_NUM}`}
-              className="bg-emerald-500 hover:bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center space-x-1.5 shadow-md transition transform active:scale-95"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white px-3.5 py-2 rounded-xl text-sm sm:text-sm font-bold flex items-center space-x-1.5 shadow-md transition transform active:scale-95"
             >
               <Phone className="w-4 h-4" />
               <span className="hidden sm:inline">Gọi Ngay</span>
@@ -130,7 +130,7 @@ export default function App() {
               href={`https://zalo.me/${PHONE_NUM}`}
               target="_blank"
               rel="noreferrer"
-              className="bg-yellow-400 hover:bg-yellow-300 text-blue-950 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-black flex items-center space-x-1.5 shadow-md transition transform active:scale-95"
+              className="bg-yellow-400 hover:bg-yellow-300 text-blue-950 px-3.5 py-2 rounded-xl text-sm sm:text-sm font-black flex items-center space-x-1.5 shadow-md transition transform active:scale-95"
             >
               <MessageCircle className="w-4 h-4 fill-blue-950" />
               <span>Zalo {PHONE_DISPLAY}</span>
@@ -146,23 +146,23 @@ export default function App() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
           {/* Thông điệp bên trái */}
           <div className="md:col-span-7 space-y-5 text-center md:text-left">
-            <div className="inline-flex items-center space-x-2 bg-yellow-400/20 border border-yellow-300/40 text-yellow-300 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide">
+            <div className="inline-flex items-center space-x-2 bg-yellow-400/20 border border-yellow-300/40 text-yellow-300 px-3.5 py-1.5 rounded-full text-sm font-bold tracking-wide">
               <Sparkles className="w-4 h-4" />
               <span>Sạch Sâu - Thơm Lâu - Gấp Gọn Mặc Ngay</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-black leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-black leading-tight tracking-tight">
               GIẶT SẤY CHUYÊN NGHIỆP <br />
-              <span className="text-yellow-300 underline decoration-yellow-400 decoration-wavy decoration-2">CHỈ TỪ 10K/KG</span>
+              <span className="text-yellow-300">CHỈ TỪ 10K/KG</span>
             </h1>
 
-            <p className="text-blue-100 text-sm sm:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
+            <p className="text-blue-100 text-base sm:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
               Tiệm giặt sấy Áo Thơm nhận giặt sấy quần áo, giặt chăn màn, vệ sinh giày, tẩy vết bẩn và ủi đồ.
               Giao nhận tận nơi siêu tốc - Miễn phí ship bán kính 2km!
             </p>
 
             {/* Các điểm mạnh */}
-            <div className="pt-1 flex flex-wrap justify-center md:justify-start gap-2 text-xs font-semibold">
+            <div className="pt-1 flex flex-wrap justify-center md:justify-start gap-2 text-sm font-semibold">
               <div className="bg-blue-800/80 border border-blue-700 px-3 py-1.5 rounded-lg flex items-center space-x-1.5">
                 <CheckCircle2 className="w-4 h-4 text-yellow-300" />
                 <span>Mỗi khách 1 lồng giặt riêng</span>
@@ -179,14 +179,14 @@ export default function App() {
                 href={`https://zalo.me/${PHONE_NUM}`}
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 font-black rounded-2xl shadow-xl transition transform active:scale-95 text-base flex items-center space-x-2"
+                className="px-6 py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 font-black rounded-2xl shadow-xl transition transform active:scale-95 text-lg flex items-center space-x-2"
               >
                 <MessageCircle className="w-5 h-5 fill-blue-950" />
                 <span>Nhắn Zalo Đặt Đồ Ngay</span>
               </a>
               <a
                 href={`tel:${PHONE_NUM}`}
-                className="px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-2xl shadow-xl transition transform active:scale-95 text-base flex items-center space-x-2"
+                className="px-6 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-black rounded-2xl shadow-xl transition transform active:scale-95 text-lg flex items-center space-x-2"
               >
                 <Phone className="w-5 h-5" />
                 <span>Gọi Hotline: {PHONE_DISPLAY}</span>
@@ -197,7 +197,7 @@ export default function App() {
           {/* Thẻ dịch vụ nhanh bên phải */}
           <div className="md:col-span-5 flex justify-center">
             <div className="w-full max-w-sm bg-white text-slate-800 rounded-3xl p-6 shadow-2xl border-4 border-yellow-400 relative">
-              <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-950 font-black text-xs px-3 py-1 rounded-full shadow-md uppercase">
+              <div className="absolute -top-4 -right-4 bg-yellow-400 text-blue-950 font-black text-sm px-3 py-1 rounded-full shadow-md uppercase">
                 Free Ship 2KM
               </div>
 
@@ -205,10 +205,10 @@ export default function App() {
                 <div className="w-16 h-16 bg-blue-100 text-[#0038A8] rounded-2xl mx-auto flex items-center justify-center shadow-inner">
                   <Shirt className="w-8 h-8" />
                 </div>
-                <h3 className="font-black text-xl text-[#0038A8]">GIẶT SẤY ÁO THƠM</h3>
-                <p className="text-xs text-slate-500">Chỉ cần 1 cú chạm để mở Zalo chat trực tiếp với tiệm!</p>
+                <h3 className="font-black text-2xl text-[#0038A8]">GIẶT SẤY ÁO THƠM</h3>
+                <p className="text-sm text-slate-500">Chỉ cần 1 cú chạm để mở Zalo chat trực tiếp với tiệm!</p>
 
-                <div className="p-3 bg-blue-50 rounded-2xl border border-blue-100 text-left space-y-2 text-xs">
+                <div className="p-3 bg-blue-50 rounded-2xl border border-blue-100 text-left space-y-2 text-sm">
                   <div className="flex items-center space-x-2 text-blue-900 font-bold">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span>Giặt sấy (&lt; 3kg): Chỉ 30K / lần</span>
@@ -231,7 +231,7 @@ export default function App() {
                   href={`https://zalo.me/${PHONE_NUM}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-full py-3.5 bg-[#0038A8] hover:bg-blue-800 text-white font-black rounded-xl text-sm flex items-center justify-center space-x-2 shadow-lg transition"
+                  className="w-full py-3.5 bg-[#0038A8] hover:bg-blue-800 text-white font-black rounded-xl text-base flex items-center justify-center space-x-2 shadow-lg transition"
                 >
                   <MessageCircle className="w-5 h-5 text-yellow-300 fill-yellow-300" />
                   <span>Bấm Vào Đây Để Nhắn Zalo</span>
@@ -247,21 +247,21 @@ export default function App() {
         <div className="max-w-4xl mx-auto space-y-8">
 
           <div className="text-center space-y-2">
-            <span className="text-[#0038A8] font-bold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
+            <span className="text-[#0038A8] font-bold text-sm uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
               Bảng Giá Niêm Yết
             </span>
-            <h2 className="text-3xl font-black text-slate-900">BẢNG GIÁ DỊCH VỤ GIẶT SẤY</h2>
-            <p className="text-slate-500 text-xs sm:text-sm">Bảng giá thực tế tại Tiệm Giặt Sấy Áo Thơm</p>
+            <h2 className="text-4xl font-black text-slate-900">BẢNG GIÁ DỊCH VỤ GIẶT SẤY</h2>
+            <p className="text-slate-500 text-sm sm:text-sm">Bảng giá thực tế tại Tiệm Giặt Sấy Áo Thơm</p>
           </div>
 
           {/* TÁI HIỆN TƯƠNG TỰ BẢNG GIÁ TRÊN ẢNH 1857.PNG */}
           <div className="bg-[#0038A8] text-white rounded-3xl p-5 sm:p-8 shadow-2xl border-4 border-dashed border-white relative overflow-hidden">
 
             <div className="text-center border-b border-blue-700/80 pb-6 mb-6">
-              <div className="inline-block text-3xl sm:text-5xl font-black tracking-tight text-white mb-1">
+              <div className="inline-block text-4xl sm:text-5xl font-black tracking-tight text-white mb-1">
                 Áo <span className="text-yellow-300">thơm</span>
               </div>
-              <div className="text-2xl sm:text-4xl font-black tracking-wider text-yellow-300 uppercase">
+              <div className="text-3xl sm:text-4xl font-black tracking-wider text-yellow-300 uppercase">
                 BẢNG GIÁ DỊCH VỤ GIẶT SẤY
               </div>
             </div>
@@ -274,44 +274,44 @@ export default function App() {
                   <div className="p-2.5 bg-white text-[#0038A8] rounded-xl shadow">
                     <Shirt className="w-6 h-6" />
                   </div>
-                  <h3 className="text-xl font-black text-white tracking-wide">DỊCH VỤ GIẶT SẤY</h3>
+                  <h3 className="text-2xl font-black text-white tracking-wide">DỊCH VỤ GIẶT SẤY</h3>
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div>
-                    <div className="text-base sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt sấy
                     </div>
-                    <div className="text-xs text-yellow-200 pl-4 font-semibold">(&lt; 3kg)</div>
+                    <div className="text-sm text-yellow-200 pl-4 font-semibold">(&lt; 3kg)</div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">30K</span>
-                    <span className="text-xs text-slate-200 block">/ lần</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">30K</span>
+                    <span className="text-sm text-slate-200 block">/ lần</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div>
-                    <div className="text-base sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt sấy
                     </div>
-                    <div className="text-xs text-yellow-200 pl-4 font-semibold">(&gt; 3kg)</div>
+                    <div className="text-sm text-yellow-200 pl-4 font-semibold">(&gt; 3kg)</div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">10K</span>
-                    <span className="text-xs text-slate-200 block">/ kg</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">10K</span>
+                    <span className="text-sm text-slate-200 block">/ kg</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between py-2">
                   <div>
-                    <div className="text-base sm:text-lg font-bold text-yellow-300 flex items-center">
+                    <div className="text-lg sm:text-lg font-bold text-yellow-300 flex items-center">
                       <span className="mr-1.5 text-yellow-400">●</span> Giặt chăn màn
                     </div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">25K</span>
-                    <span className="text-xs text-slate-200 block">/ kg</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">25K</span>
+                    <span className="text-sm text-slate-200 block">/ kg</span>
                   </div>
                 </div>
               </div>
@@ -322,7 +322,7 @@ export default function App() {
                   <div className="p-2.5 bg-yellow-400 text-blue-950 rounded-xl shadow font-black">
                     <Sparkles className="w-6 h-6" />
                   </div>
-                  <div className="bg-yellow-400 text-blue-950 px-3 py-1 rounded-xl font-black text-lg">
+                  <div className="bg-yellow-400 text-blue-950 px-3 py-1 rounded-xl font-black text-xl">
                     DỊCH VỤ KHÁC
                   </div>
                 </div>
@@ -330,33 +330,33 @@ export default function App() {
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-base sm:text-lg font-bold text-white">Giặt giày</div>
+                    <div className="text-lg sm:text-lg font-bold text-white">Giặt giày</div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">70K</span>
-                    <span className="text-xs text-slate-200 block">/ đôi</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">70K</span>
+                    <span className="text-sm text-slate-200 block">/ đôi</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between py-2 border-b border-dashed border-blue-700">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-base sm:text-lg font-bold text-white">Tẩy quần áo</div>
+                    <div className="text-lg sm:text-lg font-bold text-white">Tẩy quần áo</div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">20K</span>
-                    <span className="text-xs text-slate-200 block">/ cái</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">20K</span>
+                    <span className="text-sm text-slate-200 block">/ cái</span>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-between py-2">
                   <div className="flex items-center space-x-2">
                     <span className="text-yellow-400">●</span>
-                    <div className="text-base sm:text-lg font-bold text-white">Ủi đồ</div>
+                    <div className="text-lg sm:text-lg font-bold text-white">Ủi đồ</div>
                   </div>
                   <div className="text-right">
-                    <span className="text-2xl sm:text-3xl font-black text-yellow-300">5K</span>
-                    <span className="text-xs text-slate-200 block">/ cái</span>
+                    <span className="text-3xl sm:text-3xl font-black text-yellow-300">5K</span>
+                    <span className="text-sm text-slate-200 block">/ cái</span>
                   </div>
                 </div>
               </div>
@@ -371,10 +371,10 @@ export default function App() {
                     <Truck className="w-8 h-8" />
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-black text-[#0038A8] tracking-tight">
+                    <div className="text-2xl sm:text-2xl font-black text-[#0038A8] tracking-tight">
                       FREE SHIP <span className="text-red-600">BÁN KÍNH 2KM</span>
                     </div>
-                    <div className="text-xs text-slate-500">Chỉ cần bấm nhắn Zalo, tiệm cho nhân viên đến lấy đồ!</div>
+                    <div className="text-sm text-slate-500">Chỉ cần bấm nhắn Zalo, tiệm cho nhân viên đến lấy đồ!</div>
                   </div>
                 </div>
 
@@ -382,7 +382,7 @@ export default function App() {
                   href={`https://zalo.me/${PHONE_NUM}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-3 rounded-xl text-sm flex items-center space-x-2 shadow-md shrink-0 w-full sm:w-auto justify-center"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-black px-6 py-3 rounded-xl text-base flex items-center space-x-2 shadow-md shrink-0 w-full sm:w-auto justify-center"
                 >
                   <MessageCircle className="w-5 h-5 text-yellow-300 fill-yellow-300" />
                   <span>Bấm Chat Zalo Ngay</span>
@@ -398,26 +398,26 @@ export default function App() {
       <section id="tinhgia" className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="text-center space-y-2">
-            <div className="inline-flex items-center space-x-1.5 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-xs font-bold">
+            <div className="inline-flex items-center space-x-1.5 bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-bold">
               <Calculator className="w-4 h-4" />
               <span>Tính Giá Nhanh</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">TÍNH TIỀN GIẶT DỰ TÍNH</h2>
-            <p className="text-xs sm:text-sm text-slate-500">Ước tính giá xong bấm nhắn Zalo gửi tiệm ngay</p>
+            <h2 className="text-3xl sm:text-3xl font-black text-slate-900">TÍNH TIỀN GIẶT DỰ TÍNH</h2>
+            <p className="text-sm sm:text-sm text-slate-500">Ước tính giá xong bấm nhắn Zalo gửi tiệm ngay</p>
           </div>
 
           <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-md space-y-6">
 
             {/* Nút chọn loại dịch vụ */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2 block">Chọn dịch vụ</label>
+              <label className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2 block">Chọn dịch vụ</label>
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
                 {CALC_SERVICES.map((item) => (
                   <button
                     key={item.key}
                     type="button"
                     onClick={() => setCalcType(item.key)}
-                    className={`px-2 py-3 rounded-xl text-xs sm:text-sm font-bold border-2 transition ${
+                    className={`px-2 py-3 rounded-xl text-sm sm:text-sm font-bold border-2 transition ${
                       calcType === item.key
                         ? 'bg-[#0038A8] border-[#0038A8] text-white shadow-md'
                         : 'bg-white border-slate-200 text-slate-600 hover:border-blue-300'
@@ -431,25 +431,25 @@ export default function App() {
 
             {/* Nhập số lượng */}
             <div>
-              <label className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2 block">
+              <label className="text-sm font-bold text-slate-500 uppercase tracking-wide mb-2 block">
                 {isWeightType ? 'Khối lượng (kg)' : calcType === 'shoes' ? 'Số đôi giày' : calcType === 'stain' ? 'Số cái cần tẩy' : 'Số cái cần ủi'}
               </label>
               <div className="flex items-center space-x-3">
                 <button
                   type="button"
                   onClick={() => adjustQty(-1)}
-                  className="w-11 h-11 rounded-xl bg-slate-200 hover:bg-slate-300 font-black text-xl text-slate-700 shrink-0"
+                  className="w-11 h-11 rounded-xl bg-slate-200 hover:bg-slate-300 font-black text-2xl text-slate-700 shrink-0"
                 >
                   −
                 </button>
-                <div className="flex-1 text-center py-2.5 bg-white border-2 border-slate-200 rounded-xl font-black text-xl text-[#0038A8]">
+                <div className="flex-1 text-center py-2.5 bg-white border-2 border-slate-200 rounded-xl font-black text-2xl text-[#0038A8]">
                   {currentQty}
-                  <span className="text-xs font-semibold text-slate-400 ml-1">{qtyUnit}</span>
+                  <span className="text-sm font-semibold text-slate-400 ml-1">{qtyUnit}</span>
                 </div>
                 <button
                   type="button"
                   onClick={() => adjustQty(1)}
-                  className="w-11 h-11 rounded-xl bg-[#0038A8] hover:bg-blue-800 font-black text-xl text-white shrink-0"
+                  className="w-11 h-11 rounded-xl bg-[#0038A8] hover:bg-blue-800 font-black text-2xl text-white shrink-0"
                 >
                   +
                 </button>
@@ -459,8 +459,8 @@ export default function App() {
             {/* Kết quả tính tiền */}
             <div className="bg-gradient-to-r from-[#0038A8] to-blue-700 rounded-2xl p-5 flex items-center justify-between text-white shadow-lg">
               <div>
-                <div className="text-xs text-blue-200 font-semibold uppercase">Số tiền dự tính</div>
-                <div className="text-3xl sm:text-4xl font-black text-yellow-300">
+                <div className="text-sm text-blue-200 font-semibold uppercase">Số tiền dự tính</div>
+                <div className="text-4xl sm:text-4xl font-black text-yellow-300">
                   {calculateTotal().toLocaleString('vi-VN')}.000đ
                 </div>
               </div>
@@ -471,7 +471,7 @@ export default function App() {
               href={getZaloCalcLink()}
               target="_blank"
               rel="noreferrer"
-              className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 font-black rounded-2xl text-sm sm:text-base flex items-center justify-center space-x-2 shadow-lg transition transform active:scale-95"
+              className="w-full py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 font-black rounded-2xl text-base sm:text-base flex items-center justify-center space-x-2 shadow-lg transition transform active:scale-95"
             >
               <MessageCircle className="w-5 h-5 fill-blue-950" />
               <span>Gửi Yêu Cầu Qua Zalo</span>
@@ -484,10 +484,10 @@ export default function App() {
       <section id="camket" className="py-16 px-4 bg-slate-100">
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="text-center space-y-2">
-            <span className="text-[#0038A8] font-bold text-xs uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
+            <span className="text-[#0038A8] font-bold text-sm uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
               Cam Kết Áo Thơm
             </span>
-            <h2 className="text-3xl font-black text-slate-900">VÌ SAO CHỌN ÁO THƠM?</h2>
+            <h2 className="text-4xl font-black text-slate-900">VÌ SAO CHỌN ÁO THƠM?</h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
@@ -496,8 +496,8 @@ export default function App() {
                 <div className="w-14 h-14 bg-blue-100 text-[#0038A8] rounded-2xl mx-auto flex items-center justify-center">
                   <item.icon className="w-7 h-7" />
                 </div>
-                <h3 className="font-black text-sm text-slate-900">{item.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
+                <h3 className="font-black text-base text-slate-900">{item.title}</h3>
+                <p className="text-sm text-slate-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -508,17 +508,17 @@ export default function App() {
       <footer className="bg-[#0038A8] text-blue-100 py-10 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div>
-            <div className="text-2xl font-black text-white flex items-center justify-center md:justify-start">
+            <div className="text-3xl font-black text-white flex items-center justify-center md:justify-start">
               Áo <span className="text-yellow-300 ml-1">thơm</span>
             </div>
-            <p className="text-xs mt-1">Giặt sấy sạch thơm tận nơi &middot; Free ship bán kính 2km</p>
+            <p className="text-sm mt-1">Giặt sấy sạch thơm tận nơi &middot; Free ship bán kính 2km</p>
           </div>
           <div className="flex items-center space-x-3">
-            <a href={`tel:${PHONE_NUM}`} className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-sm font-bold flex items-center space-x-2">
+            <a href={`tel:${PHONE_NUM}`} className="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-base font-bold flex items-center space-x-2">
               <Phone className="w-4 h-4" />
               <span>{PHONE_DISPLAY}</span>
             </a>
-            <a href={`https://zalo.me/${PHONE_NUM}`} target="_blank" rel="noreferrer" className="bg-yellow-400 hover:bg-yellow-300 text-blue-950 px-4 py-2.5 rounded-xl text-sm font-black flex items-center space-x-2">
+            <a href={`https://zalo.me/${PHONE_NUM}`} target="_blank" rel="noreferrer" className="bg-yellow-400 hover:bg-yellow-300 text-blue-950 px-4 py-2.5 rounded-xl text-base font-black flex items-center space-x-2">
               <MessageCircle className="w-4 h-4 fill-blue-950" />
               <span>Chat Zalo</span>
             </a>
@@ -529,11 +529,11 @@ export default function App() {
 
       {/* Thanh hành động nổi cho di động */}
       <div className="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t border-slate-200 shadow-2xl flex z-50">
-        <a href={`tel:${PHONE_NUM}`} className="flex-1 py-3.5 bg-emerald-500 text-white font-black text-sm flex items-center justify-center space-x-2">
+        <a href={`tel:${PHONE_NUM}`} className="flex-1 py-3.5 bg-emerald-500 text-white font-black text-base flex items-center justify-center space-x-2">
           <Phone className="w-4 h-4" />
           <span>Gọi Ngay</span>
         </a>
-        <a href={`https://zalo.me/${PHONE_NUM}`} target="_blank" rel="noreferrer" className="flex-1 py-3.5 bg-yellow-400 text-blue-950 font-black text-sm flex items-center justify-center space-x-2">
+        <a href={`https://zalo.me/${PHONE_NUM}`} target="_blank" rel="noreferrer" className="flex-1 py-3.5 bg-yellow-400 text-blue-950 font-black text-base flex items-center justify-center space-x-2">
           <MessageCircle className="w-4 h-4 fill-blue-950" />
           <span>Chat Zalo</span>
         </a>

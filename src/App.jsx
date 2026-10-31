@@ -8,7 +8,9 @@ import {
   CheckCircle2,
   Calculator,
   ShieldCheck,
-  Flame
+  Flame,
+  Gift,
+  Users
 } from 'lucide-react';
 
 export default function App() {
@@ -77,6 +79,11 @@ export default function App() {
     else if (calcType === 'iron') setIronQty((q) => Math.max(1, q + delta));
   };
 
+  // Ưu đãi Giới thiệu bạn - giảm 5K
+  const REFERRAL_ZALO_LINK = `https://zalo.me/${PHONE_NUM}?text=${encodeURIComponent(
+    'Chào Áo Thơm, mình muốn tham gia ưu đãi Giới thiệu bạn - giảm 5K. Mình đi cùng bạn: (tên/SĐT bạn mình)'
+  )}`;
+
   const COMMITMENTS = [
     { icon: ShieldCheck, title: 'An Toàn Đồ Đạc', desc: 'Mỗi khách 1 lồng giặt riêng, không giặt chung, không thất lạc đồ.' },
     { icon: Sparkles, title: 'Sạch Thơm Lâu', desc: 'Nước xả thơm cao cấp, sấy khô mềm mại, gấp gọn trước khi giao.' },
@@ -90,7 +97,8 @@ export default function App() {
       {/* 1. THANH THÔNG BÁO ƯU ĐÃI TRÊN CÙNG */}
       <div className="bg-yellow-400 text-blue-950 font-bold text-sm py-2 px-4 text-center flex items-center justify-center space-x-2 shadow-inner">
         <Truck className="w-4 h-4 animate-bounce" />
-        <span>GIAO NHẬN TẬN NƠI - FREE SHIP BÁN KÍNH 2KM!</span>
+        <span>FREE SHIP 2KM</span>
+        <a href="#uudai" className="underline decoration-2 underline-offset-2 hover:text-red-600">🎁 Giới thiệu bạn - Giảm ngay 5K</a>
         <span className="hidden sm:inline-block">| Hotline/Zalo: <strong>{PHONE_DISPLAY}</strong></span>
       </div>
 
@@ -112,6 +120,7 @@ export default function App() {
 
           {/* Điều hướng nhanh */}
           <nav className="hidden md:flex items-center space-x-6 text-base font-semibold">
+            <a href="#uudai" className="hover:text-yellow-300 transition">Ưu Đãi</a>
             <a href="#banggia" className="hover:text-yellow-300 transition">Bảng Giá</a>
             <a href="#tinhgia" className="hover:text-yellow-300 transition">Tính Tiền Giặt</a>
             <a href="#camket" className="hover:text-yellow-300 transition">Cam Kết</a>
@@ -238,6 +247,66 @@ export default function App() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3b. CHƯƠNG TRÌNH ƯU ĐÃI: GIỚI THIỆU BẠN - GIẢM 5K */}
+      <section id="uudai" className="py-16 px-4 bg-gradient-to-b from-sky-100 to-white scroll-mt-20">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="flex justify-center">
+            <img
+              src="/uu-dai-gioi-thieu-ban.webp"
+              alt="Giặt Sấy Áo Thơm - Giới thiệu bạn, giảm ngay 5K khi 2 người cùng tham gia. Zalo 0969 69 3114"
+              width="900"
+              height="1165"
+              loading="lazy"
+              className="w-full max-w-sm rounded-3xl shadow-2xl border-4 border-white"
+            />
+          </div>
+
+          <div className="space-y-5 text-center md:text-left">
+            <div className="inline-flex items-center space-x-2 bg-red-100 text-red-600 px-3.5 py-1.5 rounded-full text-sm font-black uppercase tracking-wide">
+              <Gift className="w-4 h-4" />
+              <span>Chương trình ưu đãi</span>
+            </div>
+
+            <h2 className="text-4xl sm:text-5xl font-black text-[#0038A8] leading-tight">
+              GIỚI THIỆU BẠN <br />
+              <span className="text-slate-800">GIẢM NGAY </span>
+              <span className="text-red-600">5K</span>
+            </h2>
+
+            <p className="text-slate-600 text-base leading-relaxed max-w-md mx-auto md:mx-0">
+              Rủ bạn bè, hàng xóm cùng giặt sấy tại Áo Thơm — khi <strong>2 người cùng tham gia</strong>, được giảm ngay 5K.
+            </p>
+
+            <div className="bg-white rounded-2xl border border-blue-100 shadow-md p-4 space-y-3 text-left max-w-md mx-auto md:mx-0">
+              <div className="flex items-start space-x-3">
+                <div className="w-7 h-7 rounded-full bg-[#0038A8] text-white font-black text-sm flex items-center justify-center shrink-0">1</div>
+                <p className="text-sm text-slate-700 pt-1">Rủ thêm 1 người bạn cùng gửi đồ giặt sấy.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-7 h-7 rounded-full bg-[#0038A8] text-white font-black text-sm flex items-center justify-center shrink-0">2</div>
+                <p className="text-sm text-slate-700 pt-1">Nhắn Zalo <strong>{PHONE_DISPLAY}</strong>, báo tên bạn đi cùng.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="w-7 h-7 rounded-full bg-red-600 text-white font-black text-sm flex items-center justify-center shrink-0">
+                  <Users className="w-4 h-4" />
+                </div>
+                <p className="text-sm text-slate-700 pt-1">Tiệm trừ ngay 5K vào hóa đơn.</p>
+              </div>
+            </div>
+
+            <a
+              href={REFERRAL_ZALO_LINK}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex px-6 py-4 bg-yellow-400 hover:bg-yellow-300 text-blue-950 font-black rounded-2xl shadow-xl transition transform active:scale-95 text-lg items-center space-x-2"
+            >
+              <MessageCircle className="w-5 h-5 fill-blue-950" />
+              <span>Nhắn Zalo Nhận Ưu Đãi</span>
+            </a>
           </div>
         </div>
       </section>

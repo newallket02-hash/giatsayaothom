@@ -81,7 +81,7 @@ export default function App() {
 
   // Ưu đãi Giới thiệu bạn - giảm 5K
   const REFERRAL_ZALO_LINK = `https://zalo.me/${PHONE_NUM}?text=${encodeURIComponent(
-    'Chào Áo Thơm, mình muốn tham gia ưu đãi Giới thiệu bạn - giảm 5K. Mình đi cùng bạn: (tên/SĐT bạn mình)'
+    'Chào Áo Thơm, mình muốn nhận ưu đãi Giới thiệu bạn - giảm 5K. Người giới thiệu / được giới thiệu: (tên + SĐT)'
   )}`;
 
   const COMMITMENTS = [
@@ -257,7 +257,7 @@ export default function App() {
           <div className="flex justify-center">
             <img
               src="/uu-dai-gioi-thieu-ban.webp"
-              alt="Giặt Sấy Áo Thơm - Giới thiệu bạn, giảm ngay 5K khi 2 người cùng tham gia. Zalo 0969 69 3114"
+              alt="Giặt Sấy Áo Thơm - Giới thiệu bạn, khách cũ và khách mới đều được giảm 5K. Zalo 0969 69 3114"
               width="900"
               height="1165"
               loading="lazy"
@@ -278,23 +278,23 @@ export default function App() {
             </h2>
 
             <p className="text-slate-600 text-base leading-relaxed max-w-md mx-auto md:mx-0">
-              Rủ bạn bè, hàng xóm cùng giặt sấy tại Áo Thơm — khi <strong>2 người cùng tham gia</strong>, được giảm ngay 5K.
+              Khách cũ giới thiệu 1 khách mới đến Áo Thơm — <strong>cả 2 người đều được giảm 5K</strong> trên đơn hàng của mỗi người.
             </p>
 
             <div className="bg-white rounded-2xl border border-blue-100 shadow-md p-4 space-y-3 text-left max-w-md mx-auto md:mx-0">
               <div className="flex items-start space-x-3">
                 <div className="w-7 h-7 rounded-full bg-[#0038A8] text-white font-black text-sm flex items-center justify-center shrink-0">1</div>
-                <p className="text-sm text-slate-700 pt-1">Rủ thêm 1 người bạn cùng gửi đồ giặt sấy.</p>
+                <p className="text-sm text-slate-700 pt-1">Khách cũ của Áo Thơm giới thiệu 1 người bạn (khách mới) gửi đồ giặt sấy.</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-7 h-7 rounded-full bg-[#0038A8] text-white font-black text-sm flex items-center justify-center shrink-0">2</div>
-                <p className="text-sm text-slate-700 pt-1">Nhắn Zalo <strong>{PHONE_DISPLAY}</strong>, báo tên bạn đi cùng.</p>
+                <p className="text-sm text-slate-700 pt-1">Khi đặt đồ, nhắn Zalo <strong>{PHONE_DISPLAY}</strong> báo tên/SĐT người giới thiệu hoặc người được giới thiệu.</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-7 h-7 rounded-full bg-red-600 text-white font-black text-sm flex items-center justify-center shrink-0">
                   <Users className="w-4 h-4" />
                 </div>
-                <p className="text-sm text-slate-700 pt-1">Tiệm trừ ngay 5K vào hóa đơn.</p>
+                <p className="text-sm text-slate-700 pt-1">Cả 2 người đều được trừ 5K trên đơn hàng của mình.</p>
               </div>
             </div>
 
